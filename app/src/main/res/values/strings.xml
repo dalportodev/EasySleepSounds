@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Easy Sleep Sounds</string>
+    <string name="testAd">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="prodAd">ca-app-pub-9999083812241050/9021005329</string>
+</resources>
