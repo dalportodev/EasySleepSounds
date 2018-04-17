@@ -16,7 +16,7 @@ class ImageAdapter(private val mContext: Context) : BaseAdapter() {
 
 
     // references to our images
-    private val mThumbIds = arrayOf<Int>(R.drawable.rain, R.drawable.thunder, R.drawable.stop)
+    private val mThumbIds = arrayOf<Int>(R.drawable.rain, R.drawable.thunder, R.drawable.highway, R.drawable.stop)
 
     override fun getCount(): Int {
         return mThumbIds.size

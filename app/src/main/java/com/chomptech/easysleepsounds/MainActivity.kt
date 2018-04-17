@@ -47,9 +47,11 @@ class MainActivity : AppCompatActivity() {
 
         when (num) {
             0 -> { mediaPlayer = MediaPlayer.create(applicationContext, R.raw.rain)
-            play()}
+                play()}
             1 -> {mediaPlayer = MediaPlayer.create(applicationContext, R.raw.thunder)
-            play()}
+                play()}
+            2 -> {mediaPlayer = MediaPlayer.create(applicationContext, R.raw.highway)
+                play()}
             3 -> if (mediaPlayer.isPlaying) {
                 mediaPlayer.stop()
                 mediaPlayer = MediaPlayer()
