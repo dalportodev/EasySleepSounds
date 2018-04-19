@@ -52,7 +52,9 @@ class MainActivity : AppCompatActivity() {
                 play()}
             2 -> {mediaPlayer = MediaPlayer.create(applicationContext, R.raw.highway)
                 play()}
-            3 -> if (mediaPlayer.isPlaying) {
+            3 -> {mediaPlayer = MediaPlayer.create(applicationContext, R.raw.crickets)
+                play()}
+            4 -> if (mediaPlayer.isPlaying) {
                 mediaPlayer.stop()
                 mediaPlayer = MediaPlayer()
             }
