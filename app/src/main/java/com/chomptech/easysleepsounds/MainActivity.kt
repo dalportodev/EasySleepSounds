@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.LENGTH_LONG).show();
 
 
-        object : CountDownTimer(3600000, 1000) {
+        object : CountDownTimer(10000, 1000) { //3600000
 
             override fun onTick(millisUntilFinished: Long) {
             }
@@ -82,8 +82,8 @@ class MainActivity : AppCompatActivity() {
             override fun onFinish() {
                 if (mediaPlayer.isPlaying) {
                     mediaPlayer.stop()
-                    mediaPlayer.release()
-                    mediaPlayer = MediaPlayer()  //CHECK THE BEHAVIOR LATER WHAT HAPPENS ATTEMPTING
+                    //mediaPlayer.release()
+                    //mediaPlayer = MediaPlayer()  //CHECK THE BEHAVIOR LATER WHAT HAPPENS ATTEMPTING
                     // PLAYBACK AFTER TIMER RUNS OUT, WIHTOUT THIS LINE OF CODE. THIS IS KIND OF DIRTY BECAUSE NOT RELEASED ANYMORE
                 }
             }
@@ -96,7 +96,7 @@ class MainActivity : AppCompatActivity() {
         if (mediaPlayer.isPlaying) {
             mediaPlayer.stop()
         }
-        mediaPlayer.release()
+        //mediaPlayer.release()
         super.onBackPressed()
     }
 
