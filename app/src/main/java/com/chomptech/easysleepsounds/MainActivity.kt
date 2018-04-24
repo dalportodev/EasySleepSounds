@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.LENGTH_LONG).show();
 
 
-        object : CountDownTimer(10000, 1000) { //3600000
+        object : CountDownTimer(3600000, 1000) { //3600000
 
             override fun onTick(millisUntilFinished: Long) {
             }
