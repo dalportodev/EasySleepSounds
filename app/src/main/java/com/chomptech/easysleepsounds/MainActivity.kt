@@ -14,7 +14,7 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.MobileAds
 import com.google.android.gms.ads.AdView
 
-
+//Commit1
 
 
 class MainActivity : AppCompatActivity() {
